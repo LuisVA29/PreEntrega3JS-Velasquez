@@ -119,7 +119,10 @@ window.onload = function(){
   }
 };
 const comprarButton = document.querySelector('.btn-success');
-
 comprarButton.addEventListener('click', function() {
+  if (carrito.length === 0) {
+    alert('El carrito está vacío');
+  } else {
     alert('¡Gracias por su compra!');
+  }
 });
